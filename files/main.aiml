@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+  <category>
+    <pattern>*</pattern>
+    <template>
+    I don't have an answer for that. Would you like me to recommend a computing
+    job for you?
+        <button>
+            <text>Yes</text>
+            <postback>YES START</postback>
+        </button>
+        <button>
+            <text>No</text>
+            <postback>NO START</postback>
+        </button>
+    </template>
+  </category>
+    
+  <category>
+    <pattern>HELLO</pattern>
+    <template>
+    Hi there! Would you like me to recommend a computing job for you?
+        <button>
+            <text>Yes</text>
+            <postback>YES START</postback>
+        </button>
+        <button>
+            <text>No</text>
+            <postback>NO START</postback>
+        </button>
+    </template>
+
+  </category>
+
+  <category>
+    <pattern>HELLO, *</pattern>
+    <template><srai>HELLO</srai></template>
+  </category>
+  
+  <category>
+    <pattern>HELLO *</pattern>
+    <template><srai>HELLO</srai></template>
+  </category>
+
+  <category>
+    <pattern>HI</pattern>
+    <template><srai>HELLO</srai></template>
+  </category>
+
+  <category>
+    <pattern>HI, *</pattern>
+    <template><srai>HELLO</srai></template>
+  </category>
+  
+  <category>
+    <pattern>HI *</pattern>
+    <template><srai>HELLO</srai></template>
+  </category>
+
+  <category>
+    <pattern>HEY</pattern>
+    <template><srai>HELLO</srai></template>
+  </category>
+
+  <category>
+    <pattern>HEY, *</pattern>
+    <template><srai>HELLO</srai></template>
+  </category>
+  
+  <category>
+    <pattern>HEY *</pattern>
+    <template><srai>HELLO</srai></template>
+  </category>
+  
+  <category>
+    <pattern>YES START</pattern>
+    <template>
+        Great! Let's get started...
+        <br></br>What word or phrase best describes your skill set?
+        <button>
+            <text>Problem Solver</text>
+            <postback>PROBLEM SOLVER</postback>
+        </button>
+        <button>
+            <text>Analyzer</text>
+            <postback>ANALYZER</postback>
+        </button>
+        <button>
+            <text>Security</text>
+            <postback>SECURITY</postback>
+        </button>
+        <button>
+            <text>Data Modeler</text>
+            <postback>DATA MODELER</postback>
+        </button>
+        <button>
+            <text>System Designer</text>
+            <postback>SYSTEM DESIGNER</postback>
+        </button>
+        </template>
+  </category>
+  
+  <category>
+      <pattern>PROBLEM SOLVER</pattern>
+      <template>
+          I would recommend:
+          <br></br>
+          <card>
+              <title>Software Engineer</title>
+              <subtitle>
+                  Proficiency in programming languages 
+                  (e.g., Java, Python, C++), problem-solving skills, 
+                  understanding of algorithms and data structures, software 
+                  design and development.
+              </subtitle>
+              <image>
+                 https://cdn.vectorstock.com/i/1000x1000/12/22/man-software-engineer-concept-with-design-vector-6961222.webp
+              </image>
+              <button>
+                  <text>Software Engineer</text>
+                  <url>https://en.wikipedia.org/wiki/Software_engineering</url>
+              </button>
+          </card>
+      </template>
+  </category>
+  
+    <category>
+      <pattern>ANALYZER</pattern>
+      <template>
+          I would recommend:
+          <br></br>
+          <card>
+              <title>Data Scientist</title>
+              <subtitle>
+                  Strong analytical and statistical skills, expertise in machine
+                  learning techniques, proficiency in programming 
+                  (e.g., Python, R), data wrangling and cleaning, knowledge of 
+                  data visualization tools.
+              </subtitle>
+              <image>
+                 https://cdn.vectorstock.com/i/1000x1000/32/10/data-scientist-vector-27123210.webp
+              </image>
+              <button>
+                  <text>Data Scientist</text>
+                  <url>https://en.wikipedia.org/wiki/Data_science</url>
+              </button>
+          </card>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>SECURITY</pattern>
+      <template>
+          I would recommend:
+          <br></br>
+          <card>
+              <title>Cybersecurity Analyst</title>
+              <subtitle>
+                  Knowledge of security protocols and technologies, 
+                  understanding of cyber threats and vulnerabilities, 
+                  proficiency in network security, incident response, and 
+                  ethical hacking.
+              </subtitle>
+              <image>
+                 https://cdn.vectorstock.com/i/1000x1000/52/88/cyber-security-analyst-isometric-concept-vector-26695288.webp
+              </image>
+              <button>
+                  <text>Cybersecurity Analyst</text>
+                  <url>https://en.wikipedia.org/wiki/Computer_security</url>
+              </button>
+          </card>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>DATA MODELER</pattern>
+      <template>
+          I would recommend:
+          <br></br>
+          <card>
+              <title>Database Administrator</title>
+              <subtitle>
+                  Proficiency in database management systems 
+                  (e.g., MySQL, Oracle, SQL Server), data modeling and 
+                  normalization, SQL query optimization, database security.
+              </subtitle>
+              <image>
+                 https://cdn.vectorstock.com/i/1000x1000/87/15/database-administrator-blue-gradient-concept-icon-vector-40858715.webp
+              </image>
+              <button>
+                  <text>Database Administrator</text>
+                  <url>https://en.wikipedia.org/wiki/Database_administrator</url>
+              </button>
+          </card>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>SYSTEM DESIGNER</pattern>
+      <template>
+          I would recommend:
+          <br></br>
+          <card>
+              <title>Systems Architect</title>
+              <subtitle>
+                  Understanding of system architecture, knowledge of networking 
+                  protocols, ability to design and integrate complex systems, 
+                  familiarity with cloud computing platforms.
+              </subtitle>
+              <image>
+                 https://cdn.vectorstock.com/i/1000x1000/23/85/cloud-architect-isolated-cartoon-vector-45362385.webp
+              </image>
+              <button>
+                  <text>Systems Architect</text>
+                  <url>https://en.wikipedia.org/wiki/Systems_architect</url>
+              </button>
+          </card>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>NO START</pattern>
+      <template>Ok, have a great day!</template>
+  </category>
+</aiml>
